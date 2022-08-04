@@ -1,0 +1,11 @@
+﻿@model AdventureWorksNS.Data.Address
+<div class="card border-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">@Model?.AddressID</div>
+    <div class="card-body text-dark">
+        <h5 class="card-tile">Precio: @Model?.AddressLine1</h5>
+        <p class="card-text">Numero: @Model?.City</p>
+        <p class="card-text">Numero: @Model?.StateProvince</p>
+        <p class="card-text">Numero: @Model?.CountryRegion</p>
+        <p class="card-text">Numero: @Model?.PostalCode</p>
+    </div>
+</div>

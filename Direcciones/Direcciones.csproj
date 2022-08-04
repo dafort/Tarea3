@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Areas\MyFeature\Pages\Direcciones.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaAdventureWorksLT">
+      <HintPath>..\..\LibreriaAdventureWorksLT\LibreriaAdventureWorksLT\bin\Debug\net6.0\LibreriaAdventureWorksLT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\MyFeature\Pages\Direcciones.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Areas\MyFeature\Pages\Direcciones.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\MyFeature\Pages\Direcciones.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\MyFeature\Pages\Shared\" />
+  </ItemGroup>
+
+
+
+</Project>
